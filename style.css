@@ -1,0 +1,333 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin-top: 0px;
+}
+
+#logo {
+  width: 80px;
+  display: flex;
+  align-items: start;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: rgba(59, 68, 101, 255);
+  height: 100px;
+  align-items: center;
+  width: 100%;
+}
+table{
+  background-color: white;
+}
+.name {
+  text-align: end;
+  border: 2px solid rgb(164, 228, 68);
+  border-radius: 30px;
+  background-color: rgba(59, 68, 101, 255);
+  padding: 8px 8px;
+  margin: 0;
+  font-size: 18px !important;
+  align-items: center;
+  cursor: pointer;
+}
+.navBtn {
+  border-radius: 4px;
+  background-color: #5ca1e1;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 15px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+.navBtn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: rgba(167, 226, 69, 255);
+}
+
+.navBtn:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 9px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.navBtn:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.navBtn:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+.navDiv {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.log_in_form {
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.adminPanelDiv {
+  padding-top: 30px;
+}
+.formsForDataB {
+  border: 1px solid rgb(186, 185, 185);
+  padding: 15px;
+  border-radius: 7px;
+  background-color: white;
+}
+.errors,
+.errors2,
+.errors3 {
+  margin-right: auto;
+  margin-left: auto;
+  width: 40%;
+  margin-top: 20px;
+}
+.table-categories {
+  max-width: 100%;
+}
+
+#modal_close_btn {
+  border-style: none !important;
+  background-color: white !important;
+  border-image: none !important;
+}
+#modal_close_btn span {
+  font-size: 25px;
+}
+#edit_category_title {
+  width: 100%;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+.l_author {
+  padding: 0;
+}
+.b_author {
+  margin-left: -12px;
+}
+.show_books {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.custom-card-height {
+  width: 100%; 
+}
+
+.custom-card-height img {
+  width: 100%; 
+  height: auto; 
+  max-height: 400px; 
+  object-fit: cover; 
+  box-shadow: 0px 8px 10px -5px rgba(12, 12, 12, 0.983);
+}
+
+.book_card {
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 8px rgb(21, 0, 0);
+}
+
+.book_card:hover {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.admin_div{
+  background-color:rgba(167, 226, 69, 255);
+  width: 100%;
+  padding: 5px;
+}
+#admin_panel_btn, #comments_section{
+  background-color: rgba(59, 68, 101, 255);
+  color: white;
+  border-radius: 20px;
+}
+#footer{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  background-color:rgba(167, 226, 69, 255);
+}
+body {
+  background-image: linear-gradient(rgba(226, 226, 226, 0.679), rgba(0, 0, 0, 0.112)), url(images/rptgtpxd-1396254731.avif);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  
+}
+.container_div{
+  background-color: rgba(59, 68, 101, 255);
+  width: 100%;
+  margin: 0;
+}
+#checkbox_container{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:rgba(103, 143, 40, 0.597) ;
+  border-radius: 20px 20px 0 0;
+  
+}
+.card_holder{
+  padding: 30px;
+}
+.card_holder img {
+  width: 500px;
+  height: 100%; 
+  display: block; 
+}
+
+.card_holder .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#info {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#info .row {
+  border-bottom: 5px solid white;
+  padding: 15px 15px 0 15px;
+}
+
+#info table {
+  background-color: rgb(199, 223, 163);
+}
+
+.book_heading {
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.comment_section {
+
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(199, 223, 163);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.comment_section form {
+  margin-bottom: 15px;
+}
+
+.comment_section label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.comment_section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.comment_section textarea:focus {
+  outline: none;
+  border-color:  rgba(59, 68, 101, 255);
+}
+
+.table {
+  margin-bottom: 20px;
+}
+
+.table th, .table td {
+  border-top: none;
+  color: rgb(88, 88, 88);
+}
+
+.table th {
+  width: 30%;
+}
+
+.btn_comment{
+  border: 1px solid white;
+  color: white ;
+}
+
+.msg{
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.body_comments{
+  height: 100vh;
+}
+
+.table_all_comments{
+  width: 50%;
+}
+.table_body_comments{
+ margin-left: 50px;
+ margin-top: 50px;
+  width: 40%;
+}
